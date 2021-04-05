@@ -27,5 +27,6 @@ The Monoqlo framework itself does not require installation other than downloadin
 # Software Requirements and Dependencies
 
 Note - the software versions indicated here are those that were uesd during testing. Other versions may work, however we cannot guarantee there will not be compatibility issues.
+
 Note - it is highly advised to use an environment manager (e.g. Anaconda) when installing these software and dependencies.
 
