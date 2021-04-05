@@ -12,4 +12,14 @@ Monoqlo serves as a useful tool in laboratory automation scenarios in which cell
 
 
 
-# Installation & System Requirements
+# Installation
+
+The Monoqlo framework itself does not require installation, but has various requirements and dependencies which must be installed (see below.)
+
+# Recommended Hardware
+
+CUDA-capable GPU (The framework can executed on a CPU, but will benefit hugely from GPU acceleration due to the large numbers of images that need to be analyzed.)
+16GB+ memory
+High end CPU (Intel Core i9-9900k or similar)
+
+
