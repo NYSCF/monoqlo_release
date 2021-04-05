@@ -43,3 +43,5 @@ Python3 libraries (can be installed using pip):
 - Keras-RetinaNet:
   - To install this module, navigate to the "keras_retinanet_master" directory within the Monoqlo master directory, and set it as your working directory.
   - Enter the command "pip install . --user"
+
+Estimated total install time: <15 minutes, excepting cases where errors are encountered while installing dependencies.
