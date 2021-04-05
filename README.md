@@ -21,6 +21,6 @@ The Monoqlo framework itself does not require installation, but has various requ
 - CUDA-capable GPU (NVIDIA RTX 2080 Ti / 3080 Ti or similar)
   - (The framework can be executed on a CPU, but will benefit hugely from GPU acceleration due to the large number of images that must be analyzed.)
 - 16GB+ memory
-- High end CPU (Intel Core i9-9900k or similar)
+- High-end CPU (Intel Core i9-9900k or similar)
 
 
