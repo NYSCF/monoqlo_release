@@ -45,3 +45,15 @@ Python3 libraries (can be installed using pip):
   - Enter the command "pip install . --user"
 
 Estimated total install time: <15 minutes, excepting cases where errors are encountered while installing dependencies.
+
+# Useage
+
+1. In order to test the framework's execution, you must download an example dataset. An example dataset, consisting of a single plate, can be downloaded from the following link:
+
+2. Once you have downloaded the zip folder from the link above, extract the data and place the resulting directory (named "Demo_Data") within top level of the master Monoqlo install directory (you can replace the existing, empty folder with the same name)
+
+3. Navigate to the top level of the master Monoqlo install directory, so that it is set as your working directory
+
+4. Run "python3 mq_main.py" in terminal, or in your environment of choice.
+
+Following step 4, the framework will begin analyzing the demonstration data by default (this can be configured) and real-time information will be printed to the standard output.
