@@ -57,3 +57,10 @@ Estimated total install time: <15 minutes, excepting cases where errors are enco
 4. Run "python3 mq_main.py" in terminal, or in your environment of choice.
 
 Following step 4, the framework will begin analyzing the demonstration data by default (this can be configured) and real-time information will be printed to the standard output.
+
+# Expected outputs
+
+For each well processed, the algorithm will place cropped colony images from Monoqlo's predictions and algorithmic processing in day-specific folders within the "Processing_Crops" directory. For each image, all detected objects will be drawn, with colonies/cells being indicated in green and "differentiation" being indicated in red. Writing these images to file is purely for the purposes of visual inspection; they are not read back into memory for any purpose and do not affect final results/well classifications.
+
+For each well, the algorithm also places output files, summarizing the results of well clonality classification, within the "Outputs" directory.
+
