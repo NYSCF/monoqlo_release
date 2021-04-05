@@ -14,7 +14,7 @@ Monoqlo serves as a useful tool in laboratory automation scenarios in which cell
 
 # Installation
 
-The Monoqlo framework itself does not require installation, but has various requirements and dependencies which must be installed (see below.)
+The Monoqlo framework itself does not require installation other than downloading this repository, but has various requirements and dependencies which must be installed (see below)
 
 # Recommended Hardware
 
