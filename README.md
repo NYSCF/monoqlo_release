@@ -30,3 +30,16 @@ Note - the software versions indicated here are those that were uesd during test
 
 Note - it is highly advised to use an environment manager (e.g. Anaconda) when installing these software and dependencies.
 
+Requirements:
+- Python3 (version 3.6.9 recommended)
+- CUDA Toolkit version 10.0
+- pip (version 20.2.2)
+
+Python3 libraries (can be installed using pip):
+- Tensorflow (GPU version) version 1.14
+- Keras version 2.3.1 or 2.3.2
+- Numpy 1.18.5
+- OpenCV (cv2) version 4.1.1
+- Keras-RetinaNet:
+  - To install this module, navigate to the "keras_retinanet_master" directory within the Monoqlo master directory, and set it as your working directory.
+  - Enter the command "pip install . --user"
