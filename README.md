@@ -8,7 +8,7 @@ https://www.biorxiv.org/content/10.1101/2020.12.28.424610v1
 
 ![Data generation](data_generation.png)
 
-Monoqlo serves as a useful tool in laboratory automation scenarious where monoclonalization is used, such as illustrated in the figure above.
+Monoqlo serves as a useful tool in laboratory automation scenarios in which cells are monoclonalized and imaged, such as illustrated in the figure above.
 
 
 
