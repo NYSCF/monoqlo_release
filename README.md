@@ -64,5 +64,5 @@ For each well processed, the algorithm will place cropped colony images from Mon
 
 ![Illustrative output](output_illustration2.png)
 
-For each well, the algorithm also places output files, summarizing the results of well clonality classification, within the "Outputs" directory.
+For each well, the algorithm also outputs flat files, summarizing the results of well clonality classification, to the "Outputs" directory.
 
