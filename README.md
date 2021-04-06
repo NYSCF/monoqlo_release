@@ -62,5 +62,7 @@ Following step 4, the framework will begin analyzing the demonstration data by d
 
 For each well processed, the algorithm will place cropped colony images from Monoqlo's predictions and algorithmic processing in day-specific folders within the "Processing_Crops" directory. For each image, all detected objects will be drawn, with colonies/cells being indicated in green and "differentiation" being indicated in red. Writing these images to file is purely for the purposes of visual inspection; they are not read back into memory for any purpose and do not affect final results/well classifications.
 
+![Illustrative output](output_illustration.png)
+
 For each well, the algorithm also places output files, summarizing the results of well clonality classification, within the "Outputs" directory.
 
