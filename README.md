@@ -75,3 +75,6 @@ Please note - the DMR0001 dataset is >150 GB in size.
 
 DMR0001 represents the image set for an entire, real-world monoclonalization run which has been fully deidentified, consisting of daily scans for each well of 9 96-well plates.
 
+Monoqlo Dataset (DMR0001) © 2021 by  NYSCF is licensed under CC BY-NC-SA 4.0.To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+
