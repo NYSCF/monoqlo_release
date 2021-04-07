@@ -66,3 +66,12 @@ For each well processed, the algorithm will place cropped colony images from Mon
 
 For each well, the algorithm also outputs flat files, summarizing the results of well clonality classification, to the "Outputs" directory.
 
+# Downloading data for testing
+
+In order to test the Monoqlo framework, you will require a compatible dataset. An example (DMR0001) can be downloaded from the following link:
+https://nyscfopensource.blob.core.windows.net/monoqlo/DMR0001.zip
+
+Please note - the DMR0001 dataset is >150 GB in size.
+
+DMR0001 represents the image set for an entire, real-world monoclonalization run which has been fully deidentified, consisting of daily scans for each well of 9 96-well plates.
+
