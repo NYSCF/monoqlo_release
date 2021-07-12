@@ -4,55 +4,6 @@ import numpy as np
 
 import datetime
 
-def get_sorted_scans(imageList, plateID, well):
-    """
-    Sorts scan names by date for a given plate and well ID
-    Returns ordered list
-    Restricts to max 1 scan per calendar day
-    """
-    filteredScans = []
-    dates = []
-    years = []
-    months = []
-    for i in imageList:
-        date = "-".join(i.split("/")[-2].split("_")[3].split("-")[0:3])
-        if date in dates:
-            continue
-        if "_" + plateID in i and "Well_" + well + "_" in i:
-            dates.append(date)
-            filteredScans.append(i)
-        if i.split("/")[-2].split("_")[3].split("-")[2] not in years:
-            years.append(i.split("/")[-2].split("_")[3].split("-")[2])
-        if int(i.split("/")[-2].split("_")[3].split("-")[0]) not in months:
-            months.append(int(i.split("/")[-2].split("_")[3].split("-")[0]))
-    filteredScans.sort()
-    daySortedScans = []
-    for i in filteredScans:
-        if len(i.split("/")[-2].split("_")[3].split("-")[1]) == 1:
-            daySortedScans.append(i)
-    for i in filteredScans:
-        if len(i.split("/")[-2].split("_")[3].split("-")[1]) == 2:
-            daySortedScans.append(i)
-    months.sort()
-    monthSortedScans = []
-    for month in months:
-        for i in daySortedScans:
-            if int(i.split("/")[-2].split("_")[3].split("-")[0]) == month:
-                monthSortedScans.append(i)
-    if len(years) == 2:
-        year1, year2 = min(years), max(years)
-        yearSortedScans = []
-        for i in monthSortedScans:
-            if i.split("/")[-2].split("_")[3].split("-")[2] == year1:
-                yearSortedScans.append(i)
-        for i in monthSortedScans:
-            if i.split("/")[-2].split("_")[3].split("-")[2] == year2:
-                yearSortedScans.append(i)
-        return yearSortedScans
-    else:
-        return monthSortedScans
-
-
 def enumerateRunDir(path):
     """
     Searches run directory for images
@@ -335,6 +286,53 @@ def is_same_colony(coords, latter_coords, day):  # E + L = Early + Late, respect
     print("\t\tSame colony found")
     return True
 
+def get_sorted_scans(imageList, plateID, well):
+    """
+    Sorts scan names by date for a given plate and well ID
+    Returns ordered list
+    Restricts to max 1 scan per calendar day
+    """
+    filteredScans = []
+    dates = []
+    years = []
+    months = []
+    for i in imageList:
+        date = "-".join(i.split("/")[-2].split("_")[3].split("-")[0:3])
+        if date in dates:
+            continue
+        if "_" + plateID in i and "Well_" + well + "_" in i:
+            dates.append(date)
+            filteredScans.append(i)
+        if i.split("/")[-2].split("_")[3].split("-")[2] not in years:
+            years.append(i.split("/")[-2].split("_")[3].split("-")[2])
+        if int(i.split("/")[-2].split("_")[3].split("-")[0]) not in months:
+            months.append(int(i.split("/")[-2].split("_")[3].split("-")[0]))
+    filteredScans.sort()
+    daySortedScans = []
+    for i in filteredScans:
+        if len(i.split("/")[-2].split("_")[3].split("-")[1]) == 1:
+            daySortedScans.append(i)
+    for i in filteredScans:
+        if len(i.split("/")[-2].split("_")[3].split("-")[1]) == 2:
+            daySortedScans.append(i)
+    months.sort()
+    monthSortedScans = []
+    for month in months:
+        for i in daySortedScans:
+            if int(i.split("/")[-2].split("_")[3].split("-")[0]) == month:
+                monthSortedScans.append(i)
+    if len(years) == 2:
+        year1, year2 = min(years), max(years)
+        yearSortedScans = []
+        for i in monthSortedScans:
+            if i.split("/")[-2].split("_")[3].split("-")[2] == year1:
+                yearSortedScans.append(i)
+        for i in monthSortedScans:
+            if i.split("/")[-2].split("_")[3].split("-")[2] == year2:
+                yearSortedScans.append(i)
+        return yearSortedScans
+    else:
+        return monthSortedScans
 
 def is_within(box_e, box_l):  # Boxes earlier and later
     '''
