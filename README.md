@@ -48,7 +48,7 @@ Estimated total install time: <15 minutes, excepting cases where errors are enco
 
 # Useage
 
-1. In order to test the framework's execution, you must download an example dataset. An example dataset, consisting of a single plate, can be downloaded from the link below (see section "Downloading data for testing"
+1. In order to test the framework's execution, you must download an example dataset. An example dataset, consisting of a single plate, can be downloaded from the link below (see section "Downloading data for testing")
 
 2. Once you have downloaded the zip folder from the link above, extract the data and place the resulting directory (named "Demo_Data") within top level of the master Monoqlo install directory (you can replace the existing, empty folder with the same name)
 
