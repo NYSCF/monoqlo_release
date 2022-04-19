@@ -14,8 +14,6 @@ def enumerateRunDir(path):
     uniquePlateIDs = []
     imagePaths = []
     for plate in os.listdir(path):
-        if "PS_" not in plate:
-            continue
         if plate.split("_")[1] + "_" + plate.split("_")[2] not in uniquePlateIDs:  # Plate ID
             uniquePlateIDs.append(plate.split("_")[1] + "_" + plate.split("_")[2])
         for well in os.listdir(path + plate):
